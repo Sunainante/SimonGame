@@ -46,7 +46,7 @@ function checkWhetherKeysMatch(currentLevel)
       var audio = new Audio('wrong.mp3');
       audio.play();
       $("body").addClass("game-over");
-      $("#level-title").text("Game Over, Press Any Key to Restart");
+      $("#level-title").text("Game Over, Press Any Key to Restart your level is "+level);
       $("#level-title").css("color",red);
     }
 
