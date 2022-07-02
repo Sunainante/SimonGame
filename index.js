@@ -43,7 +43,7 @@ function checkWhetherKeysMatch(currentLevel)
     }
 }
     else{
-      var audio = new Audio('sounds/wrong.mp3');
+      var audio = new Audio('wrong.mp3');
       audio.play();
       $("body").addClass("game-over");
       $("#level-title").text("Game Over, Press Any Key to Restart");
@@ -59,25 +59,25 @@ function checkWhetherKeysMatch(currentLevel)
     switch(key)
     {
       case "green":
-                  var audio = new Audio('sounds/green.mp3');
+                  var audio = new Audio('green.mp3');
                   audio.play();
                   $("#green").addClass("pressed");
                   setTimeout(() => {$("#green").removeClass("pressed");  }, 100);
                    break;
       case "red":
-                 var audio = new Audio('sounds/red.mp3');
+                 var audio = new Audio('red.mp3');
                  $("#red").addClass("pressed");
                  setTimeout(() => {$("#red").removeClass("pressed");  }, 100);
                  audio.play();
                    break;
       case "yellow":
-                   var audio = new Audio('sounds/yellow.mp3');
+                   var audio = new Audio('yellow.mp3');
                    $("#yellow").addClass("pressed");
                    setTimeout(() => {$("#yellow").removeClass("pressed");  }, 100);
                  audio.play();
                   break;
       case "blue":
-                 var audio = new Audio('sounds/blue.mp3');
+                 var audio = new Audio('blue.mp3');
                  $("#blue").addClass("pressed");
                  setTimeout(() => {$("#blue").removeClass("pressed");  }, 100);
                  audio.play();
